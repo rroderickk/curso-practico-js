@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
     <title>FigurasGeometricas</title>
+    <style>
+        body {
+            font-family: "Audiowide", sans-serif;
+            letter-spacing: 1.1618px;
+            <!-- text-transform: uppercase; -->
+        }
+    </style>
 </head>
 <body>
-    <h1>Figuras Geometricas</h1>
+    <h1>GeometricsCheatSheet </h1>
+
+    <section>
+        <h4>Cuadrado</h4>
+        <form>
+            <label for="inputCuadrado">Lado = </label>
+            <input id="inputCuadrado" type="number" autofocus ></input>
+            <button type="button" id="but" onclick="resultCuadrado(document.getElementById('inputCuadrado').value)">CalcularDatos</button>
+            <br/>
+            <label id="">Perimetro = </label><label id="labelResult">x</label>
+            <br/>
+            <label id="">Area = </label><label id="labelResult2">y</label>
+        </form>
+    </section>
+
+    <section>
+        <h4>Triangulo Lite</h4>
+        <form>
+            <label for="inputTrianguloL1">Base1 = </label>
+            <input id="inputTrianguloL1" type="number"></input><br/>
+            <label for="inputTrianguloL2">Altura2 = </label>
+            <input id="inputTrianguloL2" type="number" ></input>
+            <button type="button" id="buttonTriangulo" onclick="resultTriangulo(document.getElementById('inputTrianguloL1').value, document.getElementById('inputTrianguloL2').value)">CalcularDatos</button>
+            <br/>
+            <label id="">Area = </label><label id="labelResultTA">?</label>
+        </form>
+    </section>
+
+    <section>
+        <h4>Circulo</h4>
+        <form>
+            <label for="inputCirculo">Radio = </label>
+            <input id="inputCirculo" type="number"></input>
+            <button type="button" id="buttonCirculo" onclick="resultCirculo(document.getElementById('inputCirculo').value)">CalcularDatos</button>
+            <br/>
+            <label id="">Diameto = </label><label id="labelResultDC">?</label><br/>
+            <label id="">Area = </label><label id="labelResultDA">?</label><br/>
+            <label id="">Perimetro = </label><label id="labelResultP">p</label><br/>
+        </form>
+
+    </section>
    <script src="figuras.js"></script> 
 </body>
 </html>
