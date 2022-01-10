@@ -44,11 +44,35 @@
     </section>
 
     <section>
+        <h4>Triangulo Isosceles</h4>
+        <form>
+            <label for="inputTrianguloIL1">LadoA = </label>
+            <input id="inputTrianguloIL1" type="number"></input><br/>
+            <label for="inputTrianguloIL2">LadoB = </label>
+            <input id="inputTrianguloIL2" type="number" ></input><br/>
+            <label for="inputTrianguloIL3">LadoC = </label>
+            <input id="inputTrianguloIL3" type="number" ></input>
+            <button type="button" id="buttonTriangulo" onclick="
+                isosceles(
+                parseInt(document.getElementById('inputTrianguloIL1').value), 
+                parseInt(document.getElementById('inputTrianguloIL2').value), 
+                parseInt(document.getElementById('inputTrianguloIL3').value)
+                )
+            ">CalcularDatos
+            </button><br/>
+            <a>Demostracion: Un triangulo es Isosceles si AB es igual AC</a><br/>
+            <label id="">Es Isosceles? = </label><label id="labelResultI">?</label><br/>
+            <label id="">Altura = </label><label id="labelResultAT">?</label>
+        </form>
+    </section>
+
+
+    <section>
         <h4>Circulo</h4>
         <form>
             <label for="inputCirculo">Radio = </label>
             <input id="inputCirculo" type="number"></input>
-            <button type="button" id="buttonCirculo" onclick="resultCirculo(document.getElementById('inputCirculo').value)">CalcularDatos</button>
+            <button type="button" id="buttonCirculo" onclick="resultCirculo(parseInt(document.getElementById('inputCirculo').value))">CalcularDatos</button>
             <br/>
             <label id="">Diameto = </label><label id="labelResultDC">?</label><br/>
             <label id="">Area = </label><label id="labelResultDA">?</label><br/>
