@@ -89,13 +89,16 @@
     <section>
         <h4>Porcentajes</h4>
         <form>
-            <label for="inputX">X = </label>
-            <input id="inputX" type="number"></input>
-            <button type="button" id="buttonX" onclick="resultPercent(parseInt(document.getElementById('inputX').value))">%</button>
+            <label for="inputPrice">Precio Product = </label>
+            <input id="inputPrice" type="number" value="4"></input><br/>
+
+            <label for="inputOffert">Porcentaje de oferta = </label>
+            <input id="inputOffert" type="number" value="18" oninput="resultPriceOffert(parseInt(document.getElementById('inputPrice').value),parseInt(document.getElementById('inputOffert').value))></input>
+            <button type="button" id="buttonX" onclick="resultPriceOffert(parseInt(document.getElementById('inputPrice').value),parseInt(document.getElementById('inputOffert').value))">%</button>
             <br/>
-            <label id="">Diameto = </label><label id="labelResultDC">?</label><br/>
-            <label id="">Area = </label><label id="labelResultDA">?</label><br/>
-            <label id="">Perimetro = </label><label id="labelResultP">p</label><br/>
+            <label id="">Precio Final = </label><label id="labelResultPriceFinal">p</label><br/>
+            <!-- <label id="">Diameto = </label><label id="labelResultDC">?</label><br/>
+            <label id="">Area = </label><label id="labelResultDA">?</label><br/> -->
         </form>
     </section>
 

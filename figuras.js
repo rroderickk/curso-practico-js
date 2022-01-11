@@ -84,13 +84,23 @@ function resultCirculo(Radio) {
 //! ├─┘├┤ ├┬┘│  ├┤ │││ │
 //! ┴  └─┘┴└─└─┘└─┘┘└┘ ┴
 //! Codigo del Renderizado porcentaje.
-function resultPercent(x) {
-    const PI = Math.PI;
-    const Area = PI*(Radio**2);
-    const xPercent = (2*PI*Radio);
-    labelResultX.innerHTML =`${} %`; 
-    labelResultX.innerHTML =`${.toFixed(2)} cm^2`; 
-    labelResultX.innerHTML =`${.toFixed(2)} cm`; 
+function resultPriceOffert(precioOriginal, descuentoPorciento) {
+    //* El precio con descuento viene dado por la formula = (Precio * (100 - Descuento) )
+    const oferta = 100 - descuentoPorciento;
+    const precioConDescuento = (precioOriginal * oferta) / 100;
+
+    labelResultPriceFinal.innerHTML =`${precioConDescuento} $$$$`; 
+    return precioConDescuento;
+    // labelResultX.innerHTML =`${.toFixed(2)} cm^2`; 
+    // labelResultX.innerHTML =`${.toFixed(2)} cm`; 
 };
 
+const precioOriginal = 120;
+const descuentoPorciento = 18;
 
+// console.log({
+//     precioOriginal,
+//     descuentoPorciento,
+//     oferta,
+//     porcentaje,
+// });
