@@ -9,3 +9,5 @@
     -2: Implementar las formulas.
     -3: Crear funciones.
     -4: Integrar JS con HTML.
+
+<img src="./ico/demo.png" class="fit-image" width="300px" />

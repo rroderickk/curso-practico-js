@@ -19,42 +19,49 @@
 
 </head>
 <body>
+┌─┐┬ ┬┌─┐┌┬┐┬─┐┌─┐
+│  │ │├─┤ ││├┬┘├─┤
+└─┘└─┘┴ ┴─┴┘┴└─┴ ┴
     <div class="pad">
     <h1 class="tit">GeometricsCheatSheet </h1>
     <section class="main-card">
         <h4 class="h4">Cuadrado</h4>
         <div class="info">
             <img src="./ico/cuadrado1.png" alt="cuadrado" class="icon" /><span></span>
-        <form class="cuadrado">
-            <label for="inputCuadrado">Lado = </label>
-            <input id="inputCuadrado" type="number" autofocus ></input><br/>
+        <form class="cuadrado" >
+            <label for="inputCuadrado" >Lado = </label>
+            <input id="inputCuadrado" class="inputBox" type="number" autofocus ></input><br/>
             <label id="">Perimetro = </label><label id="labelResult">x</label>
             <br/>
-            <label id="">Area = </label><label id="labelResult2">y</label>
+            <label id="">Area = </label><label id="labelResult2">y</label><br/>
             <button type="button" class="myButton" onclick="resultCuadrado(document.getElementById('inputCuadrado').value)">Calcular</button>
         </form>
-        <div>
-    </section>
     </div>
-
+        </section>
+    </div>
+┌┬┐┬─┐┬┌─┐┌┐┌┌─┐
+ │ ├┬┘│├─┤││││ ┬│ │
+ ┴ ┴└─┴┴ ┴┘└┘└─┘└─┘
     <div class="pad">
     <section class="main-card">
         <h4 class="h4">Triangulo Lite</h4>
         <div class="info">
         <img src="./ico/triangulo.png" alt="cuadrado" class="icon" /><span></span>
-        <form>
+        <form >
             <label for="inputTrianguloL1">Base1 = </label>
-            <input id="inputTrianguloL1" type="number"></input><br/>
+            <input id="inputTrianguloL1" class="inputBox" type="number"></input><br/>
             <label for="inputTrianguloL2">Altura2 = </label>
-            <input id="inputTrianguloL2" type="number" ></input>
-            <button type="button" id="buttonTriangulo" onclick="resultTriangulo(document.getElementById('inputTrianguloL1').value, document.getElementById('inputTrianguloL2').value)">CalcularDatos</button>
+            <input id="inputTrianguloL2" class="inputBox" type="number" ></input><br/>
+            <label id="">Area = </label><label id="labelResultTA">?</label><br/>
+            <button type="button" id="buttonTriangulo" class="myButton" onclick="resultTriangulo(document.getElementById('inputTrianguloL1').value, document.getElementById('inputTrianguloL2').value)">Calcular</button>
             <br/>
-            <label id="">Area = </label><label id="labelResultTA">?</label>
         </form>
         <div>
     </section>
-    </div>
-
+</div>
+╔╦╗╦═╗╦╔═╗╔╗╔╔═╗╦ 
+ ║ ╠╦╝║╠═╣║║║║ ╦║ 
+ ╩ ╩╚═╩╩ ╩╝╚╝╚═╝╚═
     <div class="pad">
     <section class="main-card">
         <h4 class="h4">Triangulo Isosceles</h4>
@@ -62,27 +69,29 @@
             <img src="./ico/triangulo.png" alt="triangle" class="icon" /><span></span>
             <form>
                 <label for="inputTrianguloIL1">LadoA = </label>
-                <input id="inputTrianguloIL1" type="number"></input><br/>
+                <input id="inputTrianguloIL1" class="inputBox"  type="number"></input><br/>
                 <label for="inputTrianguloIL2">LadoB = </label>
-                <input id="inputTrianguloIL2" type="number" ></input><br/>
+                <input id="inputTrianguloIL2"  class="inputBox" type="number" ></input><br/>
                 <label for="inputTrianguloIL3">LadoC = </label>
-                <input id="inputTrianguloIL3" type="number" ></input>
-                <button type="button" id="buttonTriangulo" onclick="
-                    isosceles(
+                <input id="inputTrianguloIL3" class="inputBox"  type="number" ></input>
+                <a>Demostracion: Un triangulo es Isosceles si AB es igual AC</a><br/>
+                <label id="">Es Isosceles? = </label><label id="labelResultI">?</label><br/>
+                <label id="">Altura = </label><label id="labelResultAT">?</label><br/>
+                <button type="button" id="buttonTriangulo" class="myButton" onclick="
+                isosceles(
                     parseInt(document.getElementById('inputTrianguloIL1').value), 
                     parseInt(document.getElementById('inputTrianguloIL2').value), 
                     parseInt(document.getElementById('inputTrianguloIL3').value)
                     )
-                ">CalcularDatos
+                ">Calcular
                 </button><br/>
-                <a>Demostracion: Un triangulo es Isosceles si AB es igual AC</a><br/>
-                <label id="">Es Isosceles? = </label><label id="labelResultI">?</label><br/>
-                <label id="">Altura = </label><label id="labelResultAT">?</label>
             </form>
         </div>
     </section>
     </div>
-
+╔═╗╦╦═╗╔═╗╦ ╦╦  ╔═╗
+║  ║╠╦╝║  ║ ║║  ║ ║
+╚═╝╩╩╚═╚═╝╚═╝╩═╝╚═╝
     <div class="pad">
     <section class="main-card">
         <h4 class="h4">Circulo</h4>
@@ -91,11 +100,11 @@
         <form>
             <label for="inputCirculo">Radio = </label>
             <input id="inputCirculo" type="number"></input>
-            <button type="button" id="buttonCirculo" onclick="resultCirculo(parseInt(document.getElementById('inputCirculo').value))">CalcularDatos</button>
             <br/>
             <label id="">Diameto = </label><label id="labelResultDC">?</label><br/>
             <label id="">Area = </label><label id="labelResultDA">?</label><br/>
             <label id="">Perimetro = </label><label id="labelResultP">p</label><br/>
+            <button type="button" id="buttonCirculo" class="myButton" onclick="resultCirculo(parseInt(document.getElementById('inputCirculo').value))">Calcular</button>
         </form>
         </div>
     </section>
@@ -105,21 +114,25 @@
 //* ├─┘├┤ ├┬┘│  ├┤ │││ │
 //* ┴  └─┘┴└─└─┘└─┘┘└┘ ┴
 -->
+╔═╗╔═╗╦═╗╔═╗╔═╗╔╗╔
+╠═╝║ ║╠╦╝║  ║╣ ║║║
+╩  ╚═╝╩╚═╚═╝╚═╝╝╚╝
     <div class="pad">
     <section class="main-card">
         <h4 class="h4">Porcentajes</h4>
         <div class="info">
+            <img src="./ico/percent.png" alt="percent%" class="icon" /><span></span>
         <form>
             <label for="inputPrice">Precio Product = </label>
-            <input id="inputPrice" type="number" value="4"></input><br/>
+            <input id="inputPrice" type="number" class="inputCyan" value="4"></input><br/>
             <label for="inputOffert">Porcentaje de oferta = </label>
 
-            <input id="inputOffert" type="number" value="18" oninput="
+            <input id="inputOffert" type="number" class="inputCyan" value="18" oninput="
             resultPriceOffert(parseInt(document.getElementById('inputPrice').value),
             parseInt(document.getElementById('inputOffert').value))"
             ></input><br/>
             
-            <label id="">Precio Final = </label><label id="labelResultPriceFinal">?</label><br/>
+            <label id="" >Precio Final = </label><label id="labelResultPriceFinal" >?</label><br/>
             <!-- <button type="button" id="buttonX" onclick="resultPriceOffert(parseInt(document.getElementById('inputPrice').value),parseInt(document.getElementById('inputOffert').value))">%</button> -->
             <!-- <label id="">Diameto = </label><label id="labelResultDC">?</label><br/>
             <label id="">Area = </label><label id="labelResultDA">?</label><br/> -->
