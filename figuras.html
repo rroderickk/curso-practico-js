@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
     <title>FigurasGeometricas</title>
     <style>
+        
         body {
+            font-size: 10px;
             font-family: "Audiowide", sans-serif;
             letter-spacing: 1.1618px;
             <!-- text-transform: uppercase; -->
         }
+
     </style>
 </head>
 <body>
     <h1>GeometricsCheatSheet </h1>
-
     <section>
         <h4>Cuadrado</h4>
         <form>
@@ -78,8 +80,27 @@
             <label id="">Area = </label><label id="labelResultDA">?</label><br/>
             <label id="">Perimetro = </label><label id="labelResultP">p</label><br/>
         </form>
-
     </section>
-   <script src="figuras.js"></script> 
+<!-- 
+//* ┌─┐┌─┐┬─┐┌─┐┌─┐┌┐┌┌┬┐
+//* ├─┘├┤ ├┬┘│  ├┤ │││ │
+//* ┴  └─┘┴└─└─┘└─┘┘└┘ ┴
+-->
+    <section>
+        <h4>Porcentajes</h4>
+        <form>
+            <label for="inputX">X = </label>
+            <input id="inputX" type="number"></input>
+            <button type="button" id="buttonX" onclick="resultPercent(parseInt(document.getElementById('inputX').value))">%</button>
+            <br/>
+            <label id="">Diameto = </label><label id="labelResultDC">?</label><br/>
+            <label id="">Area = </label><label id="labelResultDA">?</label><br/>
+            <label id="">Perimetro = </label><label id="labelResultP">p</label><br/>
+        </form>
+    </section>
+
+
+
+<script src="figuras.js"></script> 
 </body>
 </html>

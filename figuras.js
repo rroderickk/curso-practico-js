@@ -80,3 +80,17 @@ function resultCirculo(Radio) {
     labelResultP.innerHTML =`${Perimetro.toFixed(2)} cm`; 
 };
 
+//! ┌─┐┌─┐┬─┐┌─┐┌─┐┌┐┌┌┬┐
+//! ├─┘├┤ ├┬┘│  ├┤ │││ │
+//! ┴  └─┘┴└─└─┘└─┘┘└┘ ┴
+//! Codigo del Renderizado porcentaje.
+function resultPercent(x) {
+    const PI = Math.PI;
+    const Area = PI*(Radio**2);
+    const xPercent = (2*PI*Radio);
+    labelResultX.innerHTML =`${} %`; 
+    labelResultX.innerHTML =`${.toFixed(2)} cm^2`; 
+    labelResultX.innerHTML =`${.toFixed(2)} cm`; 
+};
+
+
