@@ -128,10 +128,40 @@ body {
 	margin-right: 0.5rem;
 }
 
+/* Coupons discounts */
+.coupons {
+	display: flex;
+	padding: 1px;
+	margin: 1px;
+	
+}
+
+.coupons-text {
+	border-top: 2px solid var(--line-colour);
+	padding-left: 1px;
+	color: #9f0;
+	font-weight: bold;
+	text-align: right;
+	
+}
+
+.coupons-grid {
+	display: grid;
+	cursor: pointer;
+	padding-left: 10px;
+}
+
+.coupons-image {
+	border-bottom: 2px solid var(--line-colour);
+    width: 60px;
+	padding-left: 4px;
+}
+
+
 /* Creator Info */
 .creator-info {
 	display: flex;
-	border-top: 2px solid var(--line-colour);
+	/* border-top: 2px solid var(--line-colour); */
 	padding-top: 1rem;
 	align-items: center;
 }
