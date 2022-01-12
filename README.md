@@ -20,4 +20,4 @@
 #### <img src="./productOffert/demoGomitas.png" class="fit-image"/>
 
 ## Taller $4: Demo Card Price Functional
-#### <img src="./productOffert/JuanDcEsBatman.png" class="fit-image"/>
+#### <img src="./productOffert/JuanDcEsBatmanSc.png" class="fit-image"/>
