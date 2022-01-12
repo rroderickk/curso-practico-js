@@ -18,3 +18,6 @@
     -3: Crear funciones.
     -4: Integrar JS con HTML.
 #### <img src="./productOffert/demoGomitas.png" class="fit-image"/>
+
+## Taller $4: Demo Card Price Functional
+#### <img src="./productOffert/JuanDcEsBatman.png" class="fit-image"/>
