@@ -36,8 +36,8 @@
         <div class="eth-info">
             <img src="./eth.svg" alt="ETH" class="icon"/>
                 <div class="info">
-                    <span class="eth">0.0399 ETH</span>
-                    <span class="eth-fake"> '1.0 ETH</span><br/>
+                    <label class="eth" id="ethPrice">0.039900000 ETH</label><br/>
+                    <span class="eth-fake">'1.000000000 ETH</span><br/>
                     <span class="eth-discount">'15% Off'</span>
                 </div>
             <div class="info">
@@ -50,19 +50,19 @@
 └─┘└─┘└─┘┴  └─┘┘└┘└─┘  ┴ ┴┴└─└─┘┴ ┴
 -->
 <div class="coupons">
-    <div class="coupons-grid">
+    <div class="coupons-grid" onclick="resultPriceFinal0()">
         <span class="coupons-text"> 15% Off</span>
         <img src="./coupon.png" alt="clock" class="coupons-image"/>
     </div>
-    <div class="coupons-grid">
+    <div class="coupons-grid" onclick="resultPriceFinal1()">
         <span class="coupons-text" style="color: blue"> 25% Off</span>
         <img src="./coupon.png" alt="clock" class="coupons-image"/>
     </div>
-    <div class="coupons-grid">
+    <div class="coupons-grid" onclick="resultPriceFinal2()">
         <span class="coupons-text" style="color: cyan"> 35% Off</span>
         <img src="./coupon.png" alt="clock" class="coupons-image"/>
     </div>
-    <div class="coupons-grid">
+    <div class="coupons-grid" onclick="resultPriceFinal3()">
         <span class="coupons-text" style="color: #ff0090"> 40% Off</span>
         <img src="./coupon.png" alt="clock" class="coupons-image"/>
     </div>
@@ -101,5 +101,6 @@
 ║╣ ║║║ ║║
 ╚═╝╝╚╝═╩╝
 -->
+<script src="main.js"></script>
 </body>
 </html>
