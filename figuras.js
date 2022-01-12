@@ -42,33 +42,53 @@ function resultCuadrado(e) {
 function resultTriangulo(base,altura) {
     labelResultTA.innerHTML =`${(+base * +altura)/2} cm^2`; 
 };
-
+//! DEPRECATED
+/* 
 //todo Codigo del Renderizado triangulo isosceles.
 function isosceles(l1, l2, l3) {
-
-    function resultTrianguloIsosceles(a,b,c) {
-        let ab = a-b;
-        let ac = a-c;
-        let $Isosceles = ab == ac ? true : false;
-        labelResultI.innerHTML =`${$Isosceles}`; 
-    }
-
-    function altura(base, lado) {
-        console.log({base, lado})
-        let altura = Math.sqrt(Math.pow(base/2,2) + Math.pow(lado,2))
-        console.log(altura.toFixed(2))
-        return altura.toFixed(2);
-    }
-
     if ((l1 === l2 && l1 != l3) || (l1 == l3 && l1 != l2) || (l2 == l3 && l1 != l3)){
         l1 === l2 
-            ? labelResultAT.innerHTML =`${altura(l3,l1)} cm` 
-            : l1 === l3 
-                ? labelResultAT.innerHTML =`${altura(l2, l1)}` 
-                : labelResultAT.innerHTML =`${altura(l1, l3)}`
-    }
-    return resultTrianguloIsosceles(l1,l2,l3);
+        ? labelResultAT.innerHTML =`${altura(l3,l1)} cm` 
+        : l1 === l3 
+        ? labelResultAT.innerHTML =`${altura(l2, l1)}` 
+        : labelResultAT.innerHTML =`${altura(l1, l3)}`
+
+        function resultTrianguloIsosceles(l1,l2,l3) {
+            let ab = l1-l2;
+            let ac = l1-l3;
+            let $Isosceles = ab === ac ? true : false;
+            labelResultI.innerHTML =`${$Isosceles}`; 
+        }
+        
+
+        function altura(base, lado) {
+            console.log({base, lado});
+            let altura = Math.sqrt(Math.pow(base/2,2) + Math.pow(lado,2));
+            console.log(altura.toFixed(2));
+            return altura.toFixed(2);
+        }
+        return resultTrianguloIsosceles(l1,l2,l3);
+    };
 };
+ */
+function alturaTrianguloIsosceles(trianguloGrandeLadoA, trianguloGrandeLadoB, trianguloGrandeLadoBase) {
+    if (trianguloGrandeLadoA != trianguloGrandeLadoB) {
+        labelResultI.innerHTML =`${false}`; 
+        console.error("Los lados a y b no son iguales");
+    } else {
+        labelResultI.innerHTML =`${true}`; 
+        const trianguloPequenoLadoB = trianguloGrandeLadoBase / 2;
+        const trianguloPequenoLadoBase = trianguloGrandeLadoA;
+
+        const trianguloPequenoLadoBCuadrado = trianguloPequenoLadoB * trianguloPequenoLadoB;
+        const trianguloPequenoLadoBaseCuadrado = trianguloPequenoLadoBase * trianguloPequenoLadoBase;
+
+        const trianguloPequenoLadoA = Math.sqrt(trianguloPequenoLadoBaseCuadrado - trianguloPequenoLadoBCuadrado);
+
+        const trianguloGrandeAltura = trianguloPequenoLadoA;
+        return labelResultAT.innerHTML =`${(trianguloGrandeAltura).toFixed(2)} cm` 
+    }
+}
 
 //todo Codigo del Renderizado circulo.
 function resultCirculo(Radio) {
@@ -83,24 +103,32 @@ function resultCirculo(Radio) {
 //! ┌─┐┌─┐┬─┐┌─┐┌─┐┌┐┌┌┬┐
 //! ├─┘├┤ ├┬┘│  ├┤ │││ │
 //! ┴  └─┘┴└─└─┘└─┘┘└┘ ┴
-//! Codigo del Renderizado porcentaje.
+//! Codigo del Renderizado del precio final.
 function resultPriceOffert(precioOriginal, descuentoPorciento) {
-    //* El precio con descuento viene dado por la formula = (Precio * (100 - Descuento) )
+    //? El precio con descuento viene dado por la formula = (Precio * (100 - Descuento) )
     const oferta = 100 - descuentoPorciento;
     const precioConDescuento = (precioOriginal * oferta) / 100;
 
-    labelResultPriceFinal.innerHTML =`${precioConDescuento} $$$$`; 
-    return precioConDescuento;
+    return labelResultPriceFinal.innerHTML =`${precioConDescuento} $$$$`; 
     // labelResultX.innerHTML =`${.toFixed(2)} cm^2`; 
     // labelResultX.innerHTML =`${.toFixed(2)} cm`; 
 };
 
-const precioOriginal = 120;
-const descuentoPorciento = 18;
+//?╔═╗ ┬┌─┐┌┬┐┌─┐┬  ┌─┐  ┌┬┐┌─┐┌─┐┌─┐┬ ┬┌─┐┌┐┌┌┬┐┌─┐
+//?║╣  │├┤ │││├─┘│  │ │   ││├┤ └─┐│  │ │├┤ │││ │ │ │
+//?╚═╝└┘└─┘┴ ┴┴  ┴─┘└─┘  ─┴┘└─┘└─┘└─┘└─┘└─┘┘└┘ ┴ └─┘
+//? const precioOriginal = 120;
+//? const descuentoPorciento = 18;
+//? //* El precio con descuento viene dado por la formula = (Precio * (100 - Descuento) )
+//? const oferta = 100 - descuentoPorciento;
+//? const precioConDescuento = (precioOriginal * oferta) / 100;
 
-// console.log({
-//     precioOriginal,
-//     descuentoPorciento,
-//     oferta,
-//     porcentaje,
-// });
+//! ╦  ╔═╗╔═╗  ┌─┐┌┐  ┬┌─┐┌─┐┌┬┐
+//! ║  ║ ║║ ╦  │ │├┴┐ │├┤ │   │
+//! ╩═╝╚═╝╚═╝  └─┘└─┘└┘└─┘└─┘ ┴
+//! console.log({
+//!     precioOriginal,
+//!     descuentoPorciento,
+//!     oferta,
+//!     porcentaje,
+//! });

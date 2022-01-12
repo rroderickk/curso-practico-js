@@ -64,7 +64,7 @@
  ╩ ╩╚═╩╩ ╩╝╚╝╚═╝╚═
     <div class="pad">
     <section class="main-card">
-        <h4 class="h4">Triangulo Isosceles</h4>
+        <h4 class="h4 eth">Triangulo Isosceles</h4>
         <div class="info">
             <img src="./ico/triangulo.png" alt="triangle" class="icon" /><span></span>
             <form>
@@ -74,11 +74,11 @@
                 <input id="inputTrianguloIL2"  class="inputBox" type="number" ></input><br/>
                 <label for="inputTrianguloIL3">LadoC = </label>
                 <input id="inputTrianguloIL3" class="inputBox"  type="number" ></input>
-                <a>Demostracion: Un triangulo es Isosceles si AB es igual AC</a><br/>
+                <a class="eth">Demostracion: Un triangulo es Isosceles<br/>Si AB es igual AC</a>
                 <label id="">Es Isosceles? = </label><label id="labelResultI">?</label><br/>
-                <label id="">Altura = </label><label id="labelResultAT">?</label><br/>
+                <label id="" class="title">Altura = </label><label id="labelResultAT">?</label><br/>
                 <button type="button" id="buttonTriangulo" class="myButton" onclick="
-                isosceles(
+                alturaTrianguloIsosceles(
                     parseInt(document.getElementById('inputTrianguloIL1').value), 
                     parseInt(document.getElementById('inputTrianguloIL2').value), 
                     parseInt(document.getElementById('inputTrianguloIL3').value)
@@ -99,7 +99,7 @@
             <img src="./ico/cuadrado.svg" alt="circle" class="icon" /><span></span>
         <form>
             <label for="inputCirculo">Radio = </label>
-            <input id="inputCirculo" type="number"></input>
+            <input id="inputCirculo" class="inputWhite" type="number"></input>
             <br/>
             <label id="">Diameto = </label><label id="labelResultDC">?</label><br/>
             <label id="">Area = </label><label id="labelResultDA">?</label><br/>
@@ -119,20 +119,20 @@
 ╩  ╚═╝╩╚═╚═╝╚═╝╝╚╝
     <div class="pad">
     <section class="main-card">
-        <h4 class="h4">Porcentajes</h4>
+        <h4 class="h4 title">Porcentajes</h4>
         <div class="info">
             <img src="./ico/percent.png" alt="percent%" class="icon" /><span></span>
         <form>
-            <label for="inputPrice">Precio Product = </label>
-            <input id="inputPrice" type="number" class="inputCyan" value="4"></input><br/>
-            <label for="inputOffert">Porcentaje de oferta = </label>
+            <label for="inputPrice" class="eth">Precio Product</label>
+            <input id="inputPrice" type="number" class="inputCyan eth" value="4"></input><br/>
+            <label for="inputOffert" class="title">Porcentaje de oferta</label>
 
             <input id="inputOffert" type="number" class="inputCyan" value="18" oninput="
             resultPriceOffert(parseInt(document.getElementById('inputPrice').value),
             parseInt(document.getElementById('inputOffert').value))"
             ></input><br/>
             
-            <label id="" >Precio Final = </label><label id="labelResultPriceFinal" >?</label><br/>
+            <label id="" class="eth">Precio Final = </label><label id="labelResultPriceFinal" style="color: purple" >?</label><br/>
             <!-- <button type="button" id="buttonX" onclick="resultPriceOffert(parseInt(document.getElementById('inputPrice').value),parseInt(document.getElementById('inputOffert').value))">%</button> -->
             <!-- <label id="">Diameto = </label><label id="labelResultDC">?</label><br/>
             <label id="">Area = </label><label id="labelResultDA">?</label><br/> -->
