@@ -167,21 +167,17 @@ const coupons = [
     "es_un_secreto",
 ];
 
-const inputCoupon = document.getElementById("InputCoupon");
-const couponValue = inputCoupon.value;
-
 function onClickButtonPriceDiscount() {
-	const inputPrice = document.getElementById("InputPrice");
+	const inputPrice = document.getElementById("InputCoupon");
 	const priceValue = inputPrice.value;
 	
 	const inputCoupon = document.getElementById("InputCoupon");
 	const couponValue = inputCoupon.value;
 
-	let descuento;
-
 	switch(couponValue) {
 		case coupons[0]: // "JuanDC_es_Batman"
-		descuento = 15;
+		ethPrice$ = ethPrice.innerHTML = `Felicidades Haz Ganado `+'<br/>'+`${array[2]}`;
+		return ethPrice$;
 		break;
 		case coupons[1]: // "pero_no_le_digas_a_nadie"
 		descuento = 30;
@@ -191,13 +187,7 @@ function onClickButtonPriceDiscount() {
 		break;
 	}
 
-
-	const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
-
-	const resultP = document.getElementById("ResultP");
-	resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
 }
-
 
 //**╦═╗╔═╗╔╦╗╔═╗┌─┐┬ ┬┌┐┌┌─┐┬┌─┐┌┐┌┌─┐┌─┐┌┬┐┌─┐┌─┐┬┌┐┌┌┬┐┌─┐┬  ┬┌─┐┌─┐┌┐┌┌┬┐┌─┐┌─┐
 //**╠╦╝║╣  ║ ║ ║├┤ │ │││││  ││ ││││├┤ └─┐│││├─┤└─┐││││ │ ├┤ │  ││ ┬├┤ │││ │ ├┤ └─┐
