@@ -20,11 +20,63 @@ const arr = [
 	`${Batman} ETH`
 ];
 
+//! ██████╗ ███████╗███████╗ █████╗  ██████╗████████╗ ██████╗ ██████╗ ██╗███████╗ █████╗ ███╗   ██╗██████╗  ██████╗
+//! ██╔══██╗██╔════╝██╔════╝██╔══██╗██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗██║╚══███╔╝██╔══██╗████╗  ██║██╔══██╗██╔═══██╗
+//! ██████╔╝█████╗  █████╗  ███████║██║        ██║   ██║   ██║██████╔╝██║  ███╔╝ ███████║██╔██╗ ██║██║  ██║██║   ██║
+//! ██╔══██╗██╔══╝  ██╔══╝  ██╔══██║██║        ██║   ██║   ██║██╔══██╗██║ ███╔╝  ██╔══██║██║╚██╗██║██║  ██║██║   ██║
+//! ██║  ██║███████╗██║     ██║  ██║╚██████╗   ██║   ╚██████╔╝██║  ██║██║███████╗██║  ██║██║ ╚████║██████╔╝╚██████╔╝
+//! ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝
+
+const colecciones = {
+	descuento: `${discountId.innerHTML = `${porcentajeDescuentoQuince} %jaja`} ETH`,
+	get fuck() {
+		return `${discountId.innerHTML = `${porcentajeDescuentoCuarentaiCinco} %prueba1?`} =??`;
+	},
+	miltrecientos: function(gram0s, ethPr1ce) {
+		// return `${grams.innerHTML = `${porcentajeDescuentoCuarentaiCinco} %p2`} =??`;
+		grams =  grams$.innerHTML = `${gram0s} Gr`;
+		probando =  discountId$.innerHTML = `Envio Gratis`;
+		console.log(probando)
+		ethPrice$ = ethPrice.innerHTML = `${ethPr1ce}`;
+		gram1s = '$$$$$$$';
+		return ethPrice$, probando, grams;
+	},
+	// `${discountId.innerHTML = `${porcentajeDescuentoVeintiCinco} %jaja`} ETH`
+	set Loco(parameter) {
+		result = discountId.innerHTML = `${parameter} Money`;
+		return  result.Object.keys;
+	},
+}
+
+let fn = function (a) {
+	ethPrice$ = ethPrice.innerHTML = `${arr[0]} wtf`;
+	colecciones.miltrecientos(a,'$$$');
+	colecciones.Loco = 1/0;
+	return ethPrice$, colecciones.fuck, colecciones.loco;
+}
+
+function quePedo(f,a) {
+	f(a);
+}
+$$$$$$$$$= '$$$$$$$$$$$$$$$$$$$$$4$';
+quePedo(fn(`${$$$$$$$$$}`));
+// quePedo(colecciones.fuck());
+// colecciones.miltrecientos('$$$','$$$');
+
 function porcentaje(precioOriginal, descuento) {
 	//! El precio con descuento viene dado por la formula = (Precio * (100 - Descuento) )
 	const precioFinal = precioOriginal * (100 - descuento);
 	return precioFinal;
 }
+
+//! ██████╗ ███████╗███████╗ █████╗  ██████╗████████╗ ██████╗ ██████╗ ██╗███████╗ █████╗ ███╗   ██╗██████╗  ██████╗
+//! ██╔══██╗██╔════╝██╔════╝██╔══██╗██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗██║╚══███╔╝██╔══██╗████╗  ██║██╔══██╗██╔═══██╗
+//! ██████╔╝█████╗  █████╗  ███████║██║        ██║   ██║   ██║██████╔╝██║  ███╔╝ ███████║██╔██╗ ██║██║  ██║██║   ██║
+//! ██╔══██╗██╔══╝  ██╔══╝  ██╔══██║██║        ██║   ██║   ██║██╔══██╗██║ ███╔╝  ██╔══██║██║╚██╗██║██║  ██║██║   ██║
+//! ██║  ██║███████╗██║     ██║  ██║╚██████╗   ██║   ╚██████╔╝██║  ██║██║███████╗██║  ██║██║ ╚████║██████╔╝╚██████╔╝
+//! ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝
+
+
 
 function resultPriceFinal0() {
 	normal =  discountId$.innerHTML = `'15% Off'`;
