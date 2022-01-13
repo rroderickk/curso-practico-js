@@ -38,10 +38,11 @@
                 <div class="info">
                     <label class="eth" id="ethPrice">0.039900000 ETH</label><br/>
                     <span class="eth-fake">'1.000000000 ETH</span><br/>
-                    <span class="eth-discount">'15% Off'</span>
+                    <label class="eth-discount" id="discountId">'15% Off'</label>
                 </div>
             <div class="info">
-                <img src="./gram.svg" alt="clock" class="icon" /><span>400 Gr</span>
+                <img src="./gram.svg" alt="clock" class="icon"/>
+                <label id="grams">10 Gr</label>
             </div>
         </div>
 <!-- 
@@ -67,6 +68,31 @@
         <img src="./coupon.png" alt="clock" class="coupons-image"/>
     </div>
 </div>
+<!--
+╔═╗╦═╗╔═╗╔╦╗╔═╗┌─┐╦═╗╔═╗╔═╗
+║ ╦╠╦╝╠═╣║║║╚═╗├─┤╠╦╝║╣ ╠═╣
+╚═╝╩╚═╩ ╩╩ ╩╚═╝┴ ┴╩╚═╚═╝╩ ╩
+-->
+<div class="coupons">
+    <div class="coupons-grid" onclick="resultPriceFinalDiez()">
+        <span class="coupons-text"> 10GR</span>
+        <img src="./gram.png" alt="clock" class="coupons-image"/>
+    </div>
+    <div class="coupons-grid" onclick="resultPriceFinal30()">
+        <span class="coupons-text" style="color: grey">30GR</span>
+        <img src="./gram.png" alt="clock" class="coupons-image"/>
+    </div>
+    <div class="coupons-grid" onclick="resultPriceFinal400()">
+        <span class="coupons-text" style="color: white">400GR</span>
+        <img src="./gram.png" alt="clock" class="coupons-image"/>
+    </div>
+    <div class="coupons-grid" onclick="resultPriceFinalMax()">
+        <span class="coupons-text" style="color: red">1300GR</span>
+        <img src="./gram.png" alt="clock" class="coupons-image"/>
+    </div>
+</div>
+
+
 
 
 <!--
