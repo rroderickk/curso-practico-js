@@ -23,4 +23,4 @@
 #### <img src="./productOffert/JuanDcEsBatmanSc.png" style="height: 900px"/>
 
 ## ExtensionTaller $4: Demo Card PriceGrams FullyFunctional+effects
-#### <img src="./productOffert/gif (1).gif" style="height: 900px"/>
+#### <img src="./productOffert/gif (1).gif" style="height: 1000px"/>
