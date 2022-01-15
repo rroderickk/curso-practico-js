@@ -284,7 +284,7 @@ const userCouponValue = inputCoupon.value;
 ¡Muy bien!
 
 Pero fíjate que ya tenemos nuestro cupón (con nombre y descuento) disponible en la nueva variable userCoupon.
-
+ZZZZ
 Podemos aprovechar esta variable para eliminar todos nuestros condicionales else if y cambiarlos por un condicional else que nos proporcione el porcentaje de descuento automáticamente, sin importar el cupón (válido) que estén usando nuestros usuarios.
 */
 function control(){
