@@ -111,8 +111,26 @@ try{
     
 
 
+//*               |    media,mediana|                  /\
+//*     /\        |_________________+                 /$$\         
+//*    /$$\       _                 +     /\          /||\            
+    ( (list) => ((e) => hola(e, media)) (list) ) (listaMediana);
+//*    \$$/       __________________^     \/          \||/                             
+//*     \/        |            moda |                 \$$/                                 
+//*                                                    \/
+
+
+
+
 	// Ejemplo autoejecutar function
 	// ( (list) => ((e) => console.log('La mediana es:',isParPipe(e))) (listaOrdenada) ) (listaOrdenada);
 } catch(e) {	
     console.error(e.stack,'\n[*] '+e.name,'\n[*] '+e.message)	
 };
+
+
+    //    /$$\       |   
+    //    /||\       _              
+	// ( (list) => ((e) => hola(listaMediana, moda) ) (listaMediana) ) (listaMediana);
+    //    \||/       _ 
+    //    \$$/       | 
