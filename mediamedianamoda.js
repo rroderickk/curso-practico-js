@@ -23,7 +23,7 @@ try {
     newUsable.innerHTML = `${20000000} de dolares en el bolsillo`;
     usable2.appendChild(newUsable);
 
-//**Chapter3  */
+//r**Chapter3  */
     //!historia de billgates
     let listaCompleta = [...new Set(lista)];
     listaCompleta.push('20000000');

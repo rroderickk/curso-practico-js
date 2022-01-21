@@ -151,8 +151,8 @@ try{
     ( (list) => ((e) => hola(e, media)) (list) )  (listaMediana);
 //*    \$$/       __________________^     \/           \||/                             
 //*     \/        |promedioPonderado|                  \$$/                                 
-//*                                                     \/ 
-( (list) => ((e) => hola(e, promedioPonderado)) (list) )  (notes);
+//*                                 |                   \/ 
+  ( (list)=> ((e) => hola(e, promedioPonderado))(list))  (notes);
 
 
 
@@ -166,6 +166,6 @@ try{
 
     //    /$$\       |   
     //    /||\       _              
-	// ( (list) => ((e) => hola(listaMediana, moda) ) (listaMediana) ) (listaMediana);
+    // ( (list) => ((e) => hola(listaMediana, moda) ) (listaMediana) ) (listaMediana);
     //    \||/       _ 
     //    \$$/       | 
