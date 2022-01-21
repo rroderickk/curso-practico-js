@@ -74,50 +74,85 @@ try{
 //!╔═╗╔═╗╦═╗╔═╗
 //!║  ║ ║╠╦╝║╣
 //!╚═╝╚═╝╩╚═╚═╝
-    function media(lista) {
-        let sumaLista = 0;
-        sumaLista = lista.reduce( (ac, i) => Number(ac)+Number(i) );
-        const promedioLista = sumaLista / lista.length;
-        console.log('La media es:',promedioLista.toFixed(2));
-        return promedioLista;
-    }
+  const notes = [
+    {
+      course: "Educación Física",
+      note: 10,
+      credit: 2,
+    },
+    {
+      course: "Programación",
+      note: 8,
+      credit: 5,
+    },
+    {
+      course: "Finanzas personales",
+      note: 7,
+      credit: 5,
+    },
+    {
+      course: "Economía",
+      note: 103,
+      credit: 18,
+    },
+  ];
+
+
+  const promedioPonderado = notesObject => {
+    const notesWithCredit = notesObject.map( (notesObject) => { return notesObject.note * notesObject.credit });
+    const sumOfNotesWithCredit = notesWithCredit.reduce(  (sumatoria = 0, newVal) => { return sumatoria + newVal });
+    const credits = notesObject.map( (notesObject) => { return notesObject.credit });
+    const sumOfCredits = credits.reduce(  (sum = 0, newVal) => { return sum + newVal });
+    console.log('El Promedio ponderado es: ',promedioPonderadoNotasConCreditos = sumOfNotesWithCredit / sumOfCredits);
+    return promedioPonderadoNotasConCreditos = sumOfNotesWithCredit / sumOfCredits;
+  }  
+
+  function media(lista) {
+    let sumaLista = 0;
+    sumaLista = lista.reduce( (ac, i) => Number(ac)+Number(i) );
+    const promedioLista = sumaLista / lista.length;
+    console.log('La media es:',promedioLista.toFixed(2));
+    return promedioLista;
+  }
 
 	function mediana(list) {
 		//?todo OrdernarData
 		const listaOrdenada = list.sort((a, b) => a - b);
 		//!Autoejecutar function
-		((e) => console.log("La mediana es:", isParPipe(e)))(listaOrdenada);
+		(   (e) => console.log("La mediana es:", isParPipe(e))   ) (listaOrdenada);
 	}
 
-    //!Callback
-    const hola = (data,f) => { data.sort((a, b) => a - b); f(data) };
+  //!Callback
+  const hola = (data,f) => { data.sort(     (a, b) => a - b); f(data)      };
 
-    function moda(arr){
-        console.log("La que mas se repite", 
-            [...arr].sort((a,b) =>
-                arr.filter(v => v===a).length
-                - arr.filter(v => v===b).length
-            ).pop()
-        );
-    }
+  function moda(arr){
+    console.log("La que mas se repite", 
+      [...arr].sort((a,b) =>
+        arr.filter(v => v===a).length
+        - arr.filter(v => v===b).length
+      ).pop()
+    );
+  }
 
 
 //!╔═╗╔═╗╦═╗╔═╗
 //!║  ║ ║╠╦╝║╣
 //!╚═╝╚═╝╩╚═╚═╝
-    hola(listaMediana, media);
-    hola(listaMediana, mediana);
-    hola(listaMediana, moda);
+  hola(listaMediana, media);
+  hola(listaMediana, mediana);
+  hola(listaMediana, moda);
     
 
 
-//*               |    media,mediana|                  /\
-//*     /\        |_________________+                 /$$\         
-//*    /$$\       _                 +     /\          /||\            
-    ( (list) => ((e) => hola(e, media)) (list) ) (listaMediana);
-//*    \$$/       __________________^     \/          \||/                             
-//*     \/        |            moda |                 \$$/                                 
-//*                                                    \/
+//*               | media, mediana, |                   /\
+//*               | moda            |                   /\
+//*     /\        |_________________+                  /$$\         
+//*    /$$\       _                 +     /\           /||\            
+    ( (list) => ((e) => hola(e, media)) (list) )  (listaMediana);
+//*    \$$/       __________________^     \/           \||/                             
+//*     \/        |promedioPonderado|                  \$$/                                 
+//*                                                     \/ 
+( (list) => ((e) => hola(e, promedioPonderado)) (list) )  (notes);
 
 
 

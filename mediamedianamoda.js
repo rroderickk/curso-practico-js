@@ -1,7 +1,7 @@
 console.log("$$,$$");
 const lista = ["100","200","300","400","500"];
 
-var sueldos = document.createElement('h4');
+let sueldos = document.createElement('h4');
 sueldos.textContent += lista;
 usable.appendChild(sueldos);
 
